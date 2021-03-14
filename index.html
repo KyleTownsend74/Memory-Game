@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Light and Sound Memory Game</h1>
+    
+    <p>
+      Welcome to the Light and Sound Memory Game! Repeat the patterns of lights and sounds by pressing the corresponding buttons to win!
+    </p>
+
+    <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">
+      Stop
+    </button>
+    
+    <p id="timer">
+      Time Left to Guess:
+    </p>
+        
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1),showImage(1)" onmouseup="stopTone(1),hideImage(1)">
+        <img id="img1" src="https://cdn.glitch.com/47cc424f-eaf2-4a67-ad78-3bd2e50569a4%2Fgreen-leaves.jpg?v=1615618787801"
+            width="160" height="160" class="hidden">
+        <audio id="audio1" src="https://cdn.glitch.com/47cc424f-eaf2-4a67-ad78-3bd2e50569a4%2F1.mp3?v=1615672688269"></audio>
+      </button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2),showImage(2)" onmouseup="stopTone(2),hideImage(2)">
+        <img id="img2" src="https://cdn.glitch.com/47cc424f-eaf2-4a67-ad78-3bd2e50569a4%2Fblue-ocean.jpg?v=1615621699142"
+            width="160" height="160" class="hidden">
+        <audio id="audio2" src="https://cdn.glitch.com/47cc424f-eaf2-4a67-ad78-3bd2e50569a4%2F2.mp3?v=1615672693489"></audio>
+      </button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3),showImage(3)" onmouseup="stopTone(3),hideImage(3)">
+        <img id="img3" src="https://cdn.glitch.com/47cc424f-eaf2-4a67-ad78-3bd2e50569a4%2Fred-trees.jpg?v=1615621716085"
+            width="160" height="160" class="hidden"> 
+        <audio id="audio3" src="https://cdn.glitch.com/47cc424f-eaf2-4a67-ad78-3bd2e50569a4%2F3.mp3?v=1615672696506"></audio>
+      </button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4),showImage(4)" onmouseup="stopTone(4),hideImage(4)">
+        <img id="img4" src="https://cdn.glitch.com/47cc424f-eaf2-4a67-ad78-3bd2e50569a4%2Fyellow-sand.jpg?v=1615621708917"
+            width="160" height="160" class="hidden">  
+        <audio id="audio4" src="https://cdn.glitch.com/47cc424f-eaf2-4a67-ad78-3bd2e50569a4%2F4.mp3?v=1615672699065"></audio>
+      </button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5),showImage(5)" onmouseup="stopTone(5),hideImage(5)">
+        <img id="img5" src="https://cdn.glitch.com/47cc424f-eaf2-4a67-ad78-3bd2e50569a4%2Fviolet-sky.jpg?v=1615621721046"
+            width="160" height="160" class="hidden">
+        <audio id="audio5" src="https://cdn.glitch.com/47cc424f-eaf2-4a67-ad78-3bd2e50569a4%2F5.mp3?v=1615672701612"></audio>
+      </button>
+    </div>
+    
+  </body>
+</html>
